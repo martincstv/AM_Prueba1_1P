@@ -37,6 +37,8 @@ public class ThirdActivity extends AppCompatActivity {
 
     public void onClickSecondActivity(View view){
         Intent intent = new Intent(this,SecondActivity.class);
+        intent.putExtra("nombrek",textViewNombre3.getText().toString());
+        intent.putExtra("apellidok",textViewApellido3.getText().toString());
         intent.putExtra("dividendok",editTextDividendo.getText().toString());
         intent.putExtra("divisork",editTextDivisor.getText().toString());
         intent.putExtra("numerok",editTextNumero.getText().toString());

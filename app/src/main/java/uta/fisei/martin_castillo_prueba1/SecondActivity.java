@@ -28,11 +28,21 @@ public class SecondActivity extends AppCompatActivity {
         textViewDivisor2 = findViewById(R.id.textViewDivisor2);
         textViewNumero2 = findViewById(R.id.textViewNumero2);
         buttonCerrar2 = findViewById(R.id.buttonCerrar2);
-
-        if (bundle == null) {
+        if (bundle != null) {
             buttonCerrar2.setEnabled(true);
+            String nombre = bundle.getString("nombrek");
+            String apellido = bundle.getString("apellidok");
+            String dividendo = bundle.getString("dividendok");
+            String divisor = bundle.getString("divisork");
+            String numero = bundle.getString("numerok");
 
+            editTextNombre.setText(nombre);
+            editTextApellido.setText(apellido);
+            textViewDividendo2.setText(dividendo);
+            textViewDivisor2.setText(divisor);
+            textViewNumero2.setText(numero);
         }
+
     }
 
 
@@ -45,6 +55,8 @@ public class SecondActivity extends AppCompatActivity {
 
     public void onClickMainActivity(View view){
         Intent intent = new Intent(this,MainActivity.class);
+        intent.putExtra("nombrek",editTextNombre.getText().toString());
+        intent.putExtra("apellidok",editTextApellido.getText().toString());
         startActivity(intent);
     }
 

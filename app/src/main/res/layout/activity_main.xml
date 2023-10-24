@@ -8,13 +8,13 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/first_name_plain_text" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewApellido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/last_name_plain_text" />

@@ -11,13 +11,24 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private Button buttonMostrarResultados;
-    private TextView textViewNumeroInvertido;
+    private TextView textViewNombre;
+    private TextView textViewApellido;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Bundle bundle = getIntent().getExtras();
         buttonMostrarResultados = findViewById(R.id.buttonMostrarResultados1);
-        buttonMostrarResultados.setEnabled(true);
+        textViewNombre = findViewById(R.id.textViewNombre);
+        textViewApellido = findViewById(R.id.textViewApellido);
+        if (bundle != null) {
+            buttonMostrarResultados.setEnabled(true);
+            String nombre = bundle.getString("nombrek");
+            String apellido = bundle.getString("apellidok");
+            textViewNombre.setText(nombre);
+            textViewApellido.setText(apellido);
+        }
+
     }
 
     public void onClickSecondActivity(View view){
