@@ -23,17 +23,24 @@
         android:id="@+id/editTextTextDividendo3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/dividendo_plain_text"
-        android:inputType="text" />
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/editTextTextDivisor3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/divisor_plain_text"
-        android:inputType="text" />
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/editTextTextNumero3"
@@ -41,12 +48,17 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/number_plain_text"
-        android:inputType="text" />
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
 
     <Button
         android:id="@+id/buttonCerrar3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClickSecondActivity"
-        android:text="@string/close_button_text" />
+        android:text="@string/close_button_text"
+        tools:ignore="VisualLintButtonSize" />
 </LinearLayout>

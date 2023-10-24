@@ -37,9 +37,9 @@ public class ThirdActivity extends AppCompatActivity {
 
     public void onClickSecondActivity(View view){
         Intent intent = new Intent(this,SecondActivity.class);
-        intent.putExtra("dividendok",editTextDividendo.getText());
-        intent.putExtra("divisork",editTextDivisor.getText());
-        intent.putExtra("numerok",editTextNumero.getText());
+        intent.putExtra("dividendok",editTextDividendo.getText().toString());
+        intent.putExtra("divisork",editTextDivisor.getText().toString());
+        intent.putExtra("numerok",editTextNumero.getText().toString());
         startActivity(intent);
     }
 }
