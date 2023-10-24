@@ -57,6 +57,9 @@ public class SecondActivity extends AppCompatActivity {
         Intent intent = new Intent(this,MainActivity.class);
         intent.putExtra("nombrek",editTextNombre.getText().toString());
         intent.putExtra("apellidok",editTextApellido.getText().toString());
+        intent.putExtra("dividendok",textViewDividendo2.getText().toString());
+        intent.putExtra("divisork",textViewDivisor2.getText().toString());
+        intent.putExtra("numerok",textViewNumero2.getText().toString());
         startActivity(intent);
     }
 
