@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThirdActivity" >
+
+    <TextView
+        android:id="@+id/textViewNombre3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name_plain_text" />
+
+    <TextView
+        android:id="@+id/textViewApellido3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name_plain_text" />
+
+    <EditText
+        android:id="@+id/editTextTextDividendo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/dividendo_plain_text"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextTextDivisor3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/divisor_plain_text"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextTextNumero3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/number_plain_text"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonCerrar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSecondActivity"
+        android:text="@string/close_button_text" />
+</LinearLayout>

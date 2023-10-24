@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Martin_Castillo_prueba1</string>
+    <string name="first_name_plain_text">Nombre:</string>
+    <string name="last_name_plain_text">Apellido:</string>
+    <string name="dividendo_plain_text">Dividendo:</string>
+    <string name="divisor_plain_text">Divisor:</string>
+    <string name="int_plain_text">Parte entera:</string>
+    <string name="residuo_plain_text">Residuo:</string>
+    <string name="number_reverse_plain_text">Número invertido:</string>
+    <string name="next_button">Siguiente</string>
+    <string name="show_result_button">Mostrar resultados</string>
+    <string name="number_plain_text">Numero:</string>
+    <string name="close_button_text">Cerrar</string>
+</resources>
