@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
             String divisor = bundle.getString("divisork");
             String numero = bundle.getString("numerok");
 
+          
+
             textViewNombre.setText("Nombre: ".concat(nombre));
             textViewApellido.setText("Apellido: ".concat(apellido));
             textViewDividendo.setText("Dividendo: ".concat(dividendo));
@@ -45,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
             textViewNumero.setText("Numero invertido: ".concat(numero));
         }
     }
+
+
+
 
     public void onClickSecondActivity(View view){
         Intent intent = new Intent(this,SecondActivity.class);
